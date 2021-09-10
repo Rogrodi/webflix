@@ -9,7 +9,7 @@ const LogoBox = Styled.div`
 
 const Logo = () => {
     return (
-        <LogoBox>Ola</LogoBox>
+        <LogoBox><h1>webFlix</h1></LogoBox>
     )
 }
 
