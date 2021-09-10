@@ -8,16 +8,19 @@ const Organism = Styled.header`
     display:flex;
     align-items: center;
     justify-content: center;
-    background: blue;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
 `
 
 const Molecule = Styled.div`
-    padding:8px;
+    padding:16px;
     display: flex; 
     flex-wrap: wrap;
     min-height:40px;
     width: 90%;
     justify-content: space-between;
+    align-items: center;
 `
 
 
