@@ -6,7 +6,6 @@ const SearchBox = Styled.div`
     display: flex;
     background: none;
     align-items: center;
-    flex-grow: 1;
     padding: 0px 8px;
     box-sizing: inherit;
     border: 1px solid rgba(255, 255, 255, 0.32);
@@ -43,6 +42,7 @@ const Input = Styled.input`
     color: rgba(255, 255, 255, 0.32);
     border-radius: 8px;
     outline: none;
+    width: 350px;
     flex-grow: 1;
     height: 24px;
     transition: all ease .2s;

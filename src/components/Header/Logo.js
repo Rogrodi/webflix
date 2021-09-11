@@ -3,8 +3,8 @@ import Styled from 'styled-components';
 
 const LogoBox = Styled.div`
     display: flex;
-    flex-grow: 2;
     align-items: center;
+    flex-grow: 1;
 `
 
 const Logo = () => {

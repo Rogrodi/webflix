@@ -6,8 +6,11 @@ const KeepBox = styled.div`
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    width: 50%;
-    justify-content: center;
+    flex-grow: 1;
+    max-width: 50%;
+    @media(max-width:1000px){
+        max-width: 100%;
+    }
 `
 
 const Title = styled.h1`
@@ -15,13 +18,26 @@ const Title = styled.h1`
     color: rgba(255, 255, 255, 1);
 `
 
+const Div = styled.div`
+    display: flex;
+    overflow-X: scroll;
+    flex-direction: row;
+    column-gap: 36px;
+    height: 60vh;
+`
+
+
 const Keep = () => {
     return (
         <KeepBox>
             <Title>
                 Keep Watching  
             </Title>
-        <Description/>
+            <Div>
+                <Description/>
+                <Description/>
+                <Description/>
+            </Div>
         </KeepBox>
     )
 }

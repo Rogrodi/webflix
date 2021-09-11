@@ -6,7 +6,7 @@ display: flex;
 column-gap: 16px;
 row-gap: 16px;
 @media(max-width:1000px){
-    flex-wrap: wrap;
+    
 }
 `
 
@@ -14,7 +14,7 @@ row-gap: 16px;
         display: flex;
         flex-shrink: 0;
         width: 250px;
-        height: 300px;
+        height: 100%;
         background: linear-gradient(180deg, rgba(138, 135, 135, 0) 12.16%, rgba(58, 58, 60, 0.9) 82.71%), url(${props => props.backgroundImg});
         background-position: center;
         background-size: cover;
@@ -24,6 +24,7 @@ row-gap: 16px;
     const Desc = styled.div`
         display: flex; 
         flex-direction: column;
+        row-gap:24px;
         justify-content: space-between;
     `
 

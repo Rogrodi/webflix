@@ -4,7 +4,6 @@ import Styled from 'styled-components'
 
 const MenuBox = Styled.nav`
     display: flex;
-    flex-grow: 2;
     justify-content: flex-end;
 `
 
@@ -14,15 +13,24 @@ const MenuList = Styled.ul`
 ` 
 
 const MenuListItem = Styled.li`
-    display: inline-flex;
+    align-items: center;
+    display: flex;
 `
 
-const MenuListItemLink = Styled.a`
-    display: flex;
-    height: 24px;
+const MenuListItemLink = Styled.button`
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    box-sizing: inherit;
     padding: 8px;
-    text-decoration: none; 
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all ease .5s;
+    &&:hover{
+        color: rgba(255, 255, 255, 0.6);
+    }
 `
 
 
@@ -31,7 +39,7 @@ const Menu = () => {
         <MenuBox>
             <MenuList>
                 <MenuListItem>
-                    <MenuListItemLink href="/">Home</MenuListItemLink>
+                    <MenuListItemLink><ion-icon name="person-circle-outline"></ion-icon></MenuListItemLink>
                 </MenuListItem>
             </MenuList>
         </MenuBox>

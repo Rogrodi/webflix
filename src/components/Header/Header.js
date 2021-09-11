@@ -23,14 +23,25 @@ const Molecule = Styled.div`
     align-items: center;
 `
 
+const Div = Styled.div`
+    display: flex; 
+    flex-grow: 1.5;
+    justify-content: space-between;
+    @media(max-width:1000px){
+        justify-content: flex-end;
+    }
+`
+
 
 const Header = () => {
     return (
     <Organism>
         <Molecule>
             <Logo/>
-            <Search/>
-            <Menu/>
+            <Div>
+                <Search/>
+                <Menu/>
+            </Div>
         </Molecule>
     </Organism>
     )
