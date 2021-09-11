@@ -5,19 +5,19 @@ import Controls from './Controls';
 
 const ReleaseContainer = styled.section`
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     background: linear-gradient(180deg, #000000 0%, rgba(28, 28, 30, 0.6) 12.92%, #1C1C1E 82.71%), url(${props => props.backgroundImg});
     background-position: center;
     background-size: cover;
     flex-direction: column;
-    height: 100vh;
+    height: 85vh;
     row-gap: 16px;
 `
 const ReleaseBox = styled.div`
     display:flex;
     width: 90%;
-    height: 65%;
+    height: 70%;
     background: blue;
     border-radius: 20px;
     justify-content: center; 
@@ -36,8 +36,8 @@ const ReleaseBox = styled.div`
 
 const Releases = () => {
     return(
-        <ReleaseContainer backgroundImg={'https://img.olhardigital.com.br/wp-content/uploads/2021/06/Candyman.jpg'}>
-            <ReleaseBox backgroundImg={'http://www.tribernna.com/wp-content/uploads/2021/06/candyman.jpg'}>
+        <ReleaseContainer backgroundImg={'https://img.olhardigital.com.br/wp-content/uploads/2021/07/Maligno.jpg'}>
+            <ReleaseBox backgroundImg={'https://img.olhardigital.com.br/wp-content/uploads/2021/07/Maligno.jpg'}>
                 <Description/>
             </ReleaseBox>
             <Controls/>

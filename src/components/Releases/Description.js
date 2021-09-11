@@ -6,6 +6,7 @@ const Box = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
+    row-gap: 8px;
 `
 
 const Title = styled.h1`
@@ -25,7 +26,7 @@ const Description = () => {
     return(
         <Box>
             <Title>
-                Candyman
+                Maligno
             </Title>
             <Overview>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada venenatis velit. Sed egestas, purus ut scelerisque feugiat, augue ipsum volutpat liber.

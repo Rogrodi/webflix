@@ -23,6 +23,7 @@ const Div = styled.div`
     overflow-X: scroll;
     flex-direction: row;
     column-gap: 36px;
+    padding-bottom: 36px;
     height: 60vh;
 `
 

@@ -1,8 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import ForYou from "../components/ForYou/ForYou";
 import Keep from "../components/Keep/Keep";
 import Releases from "../components/Releases/Releases";
 import Start from "../components/Start/Start";
+
+
+const Div = styled.main`
+    display: flex;
+    flex-direction: column;
+    row-gap: 36px;
+`
 
 const KeepArea = styled.section`
     display: flex;
@@ -21,7 +29,7 @@ const KeepArea2 = styled.div`
 
 const Home = () => {
     return(
-    <>
+    <Div>
         <Releases/>
         <KeepArea>
             <KeepArea2>
@@ -29,7 +37,10 @@ const Home = () => {
                 <Start/>
             </KeepArea2>
         </KeepArea>
-    </>
+        <ForYou/>
+        <ForYou/>
+        <ForYou/>
+    </Div>
     )
 }
 

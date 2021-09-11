@@ -5,9 +5,10 @@ const Div = styled.div`
 display: flex;
 column-gap: 16px;
 row-gap: 16px;
-@media(max-width:1000px){
-    
-}
+border: 1px solid #363535;
+border-radius: 8px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+padding: 16px;
 `
 
     const Img = styled.div`
@@ -68,7 +69,6 @@ row-gap: 16px;
                 box-sizing: inherit;
                 transition: all ease .5s;
                 &&:hover{
-                    transform: scale(1.1);
                     box-shadow: 0px 0px 60px -5px #BF5AF2;
                 }
             `
@@ -76,6 +76,10 @@ row-gap: 16px;
             const GiveUpBtn = styled.button`
                 background: none;
                 border: none;
+                height:24px;
+                padding: 8px;
+                box-sizing: inherit;
+                width:48px;
                 color: rgba(255, 255, 255, 0.6);
                 cursor: pointer;
                 transition: all ease .5s;
@@ -87,14 +91,14 @@ row-gap: 16px;
 const Description = () => {
     return(
         <Div>
-            <Img backgroundImg={'https://img.olhardigital.com.br/wp-content/uploads/2021/06/Candyman.jpg'}/>
+            <Img backgroundImg={'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F05%2F23%2Fphysical-2000.jpg'}/>
             <Desc>
                 <InfoBox>
                     <Last>
                         Episódio 6/10 
                     </Last>
                     <Title>
-                        CandyMan
+                        Physical
                     </Title>
                     <Overview>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada venenatis velit. Sed egestas, purus ut scelerisque feugiat, augue ipsum volutpat liber.

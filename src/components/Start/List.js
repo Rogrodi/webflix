@@ -14,7 +14,7 @@ const Item = styled.div`
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `
     const Img = styled.div`
-        height: 101px;
+        height: 100%;
         width: 86px;
         background: url(${props => props.backgroundImg});
         background-position: center;
@@ -30,26 +30,26 @@ const Item = styled.div`
     `
         const Title = styled.h2`
             color: rgba(255, 255, 255, 1);
+            font-size: 1.000em;
         `
         const Atributos = styled.ul`
             display: flex;
-            column-gap: 24px;
+            column-gap: 1.500em;
         `
             const AtributosItem = styled.li`
                 display: inline-flex;
                 color: rgba(255, 255, 255, 0.60);
-                font-size: 14px;
+                font-size: 0.875em;
             `
         const Span = styled.span`
             color: rgba(255, 255, 255, 0.60);
-            font-size: 14px;
+            font-size: 0.875em;
         `
 
     const Btn = styled.button`
         background: none;
         height:24px;
         padding:8px;
-        font-size:16px;
         outline: none;
         font-size: 1.5em;
         display: flex;
