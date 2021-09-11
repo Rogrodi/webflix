@@ -7,7 +7,7 @@ const ReleaseContainer = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, rgba(28, 28, 30, 0.6) 0%, #1C1C1E 82.71%), url(${props => props.backgroundImg});
+    background: linear-gradient(180deg, #000000 0%, rgba(28, 28, 30, 0.6) 12.92%, #1C1C1E 82.71%), url(${props => props.backgroundImg});
     background-position: center;
     background-size: cover;
     flex-direction: column;

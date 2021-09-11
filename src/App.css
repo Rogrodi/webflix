@@ -1,8 +1,12 @@
-ul,li,h1{
+ul,li,h1,h2,h3,h4,h5,h6,p{
   padding: 0;
   margin: 0;
 }
 
 body{
   background:#1C1C1E;
+}
+
+img{
+  max-width: 100%;
 }
