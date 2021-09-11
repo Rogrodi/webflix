@@ -2,35 +2,67 @@ import React from 'react'
 import Styled from 'styled-components'
 
 
-const SearchBox = Styled.input`
+const SearchBox = Styled.div`
     display: flex;
     background: none;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0px 8px;
+    box-sizing: inherit;
     border: 1px solid rgba(255, 255, 255, 0.32);
     color: rgba(255, 255, 255, 0.32);
     border-radius: 8px;
-    outline: none;
-    padding: 4px 8px;
-    flex-grow: 1;
-    height: 24px;
-    transition: all ease .2s;
+    @media(max-width:1000px){
+        border: none;
+    }
     &&:focus{
         color: rgba(255, 255, 255, 1);
         border: 1px solid rgba(255, 255, 255, 1);
-        transform: scale(1.01)
     }
+`
+
+const Button = Styled.button`
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.36);
+    font-size: 22px;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    box-sizing: inherit;
+    transition: all ease .5s;
+    &&:hover{
+        color: rgba(255, 255, 255, 1);
+    }
+`
+
+const Input = Styled.input`
+    display: flex;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.32);
+    border-radius: 8px;
+    outline: none;
+    flex-grow: 1;
+    height: 24px;
+    transition: all ease .2s;
     &&::placeholder{
         color:rgba(255, 255, 255, 0.60);
     }
     @media(max-width:1000px){
-        order: 3;
-        flex-grow: 3;
-        display: none;
+        display:none;
     }
 `
 
 const Search = () => {
     return (
-        <SearchBox placeholder={"Buscar título"} />
+        <SearchBox>
+            <Input placeholder={"Buscar título"} />
+            <Button>
+                <ion-icon name="search-outline"/>
+            </Button>
+        </SearchBox>
+       
     )
 }
 
