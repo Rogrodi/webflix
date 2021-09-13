@@ -39,11 +39,12 @@ const ForYou = ({title,API}) => {
             const req = await fetch(API);
             const json = await req.json();
             teste = json.results
-            let filme = teste.map((item,index) => {
+            let filme = teste.map((item) => {
                return( 
                     {
                         movieTitle: item.title,
                         movieImg: `https://image.tmdb.org/t/p/w500/${item.poster_path}`,
+                        key: item.id,
                     }
                 )
             })
@@ -58,12 +59,12 @@ const ForYou = ({title,API}) => {
         <Section>
             <Div>
                 <Title>
-                    {title}{console.log(list)}
+                    {title}
                 </Title>
                 <List>
                     {list.map((item) => {
                         return(
-                        <Item backgroundImg={item.movieImg} movieTitle={item.movieTitle}/>
+                        <Item key={item.key} backgroundImg={item.movieImg} movieTitle={item.movieTitle}/>
                         )
                     })}
                 </List>

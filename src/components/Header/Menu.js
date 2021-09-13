@@ -1,5 +1,6 @@
 import React from 'react'
 import Styled from 'styled-components'
+import { Link, Route } from 'react-router-dom'
 
 
 const MenuBox = Styled.nav`
@@ -39,7 +40,9 @@ const Menu = () => {
         <MenuBox>
             <MenuList>
                 <MenuListItem>
+                    <Link to="login">
                     <MenuListItemLink><ion-icon name="person-circle-outline"></ion-icon></MenuListItemLink>
+                    </Link>
                 </MenuListItem>
             </MenuList>
         </MenuBox>
