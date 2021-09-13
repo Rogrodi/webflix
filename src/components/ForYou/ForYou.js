@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import styled from "styled-components";
 import Item from "./Item";
 
@@ -25,28 +25,47 @@ const List = styled.div`
     overflow-X: scroll;
     flex-direction: row;
     column-gap: 18px;
-    padding-bottom: 36px;
+   
 `
 
 
-const ForYou = () => {
+const ForYou = ({title,API}) => {
+
+    const [list, setList] = React.useState([])
+    React.useEffect( () => { 
+
+        let teste;
+        const BasicFetch = async () => {
+            const req = await fetch(API);
+            const json = await req.json();
+            teste = json.results
+            let filme = teste.map((item,index) => {
+               return( 
+                    {
+                        movieTitle: item.title,
+                        movieImg: `https://image.tmdb.org/t/p/w500/${item.backdrop_path}`,
+                    }
+                )
+            })
+            setList(filme)
+           
+        }
+    BasicFetch();
+    },[]);
+
+
     return(
         <Section>
             <Div>
                 <Title>
-                    For You
+                    {title}{console.log(list)}
                 </Title>
                 <List>
-                    <Item/>
-                    <Item/>
-                    <Item/>
-                    <Item/>
-                    <Item/>
-                    <Item/>
-                    <Item/>
-                    <Item/>
-                    <Item/>
-                    <Item/>
+                    {list.map((item) => {
+                        return(
+                        <Item backgroundImg={item.movieImg} movieTitle={item.movieTitle}/>
+                        )
+                    })}
                 </List>
             </Div>
         </Section>

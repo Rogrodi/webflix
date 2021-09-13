@@ -28,6 +28,7 @@ const KeepArea2 = styled.div`
 `
 
 const Home = () => {
+
     return(
     <Div>
         <Releases/>
@@ -37,9 +38,10 @@ const Home = () => {
                 <Start/>
             </KeepArea2>
         </KeepArea>
-        <ForYou/>
-        <ForYou/>
-        <ForYou/>
+        <ForYou title={'For You'} API={'https://api.themoviedb.org/3/movie/upcoming?api_key=7ac072d7b0b3b497202fa87a9bcf3a1f&language=pt-BR&page=1'}/>
+        <ForYou title={'Up coming'} API={'https://api.themoviedb.org/3/movie/popular?api_key=7ac072d7b0b3b497202fa87a9bcf3a1f&language=pt-BR&page=1'}/>
+        <ForYou title={'Trending'} API={'https://api.themoviedb.org/3/trending/movie/day?api_key=7ac072d7b0b3b497202fa87a9bcf3a1f&language=pt-BR'}/>
+        <ForYou title={'Your friends are enjoying'} API={'https://api.themoviedb.org/3/movie/popular?api_key=7ac072d7b0b3b497202fa87a9bcf3a1f&language=pt-BR&page=1'}/>
     </Div>
     )
 }
