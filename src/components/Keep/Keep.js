@@ -6,8 +6,7 @@ const KeepBox = styled.div`
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    flex-grow: 1;
-    max-width: 50%;
+    max-width:60%;
     @media(max-width:1000px){
         max-width: 100%;
     }
@@ -20,11 +19,10 @@ const Title = styled.h1`
 
 const Div = styled.div`
     display: flex;
-    overflow-X: scroll;
+    overflow:hidden;
     flex-direction: row;
     column-gap: 36px;
-    padding-bottom: 36px;
-    height: 60vh;
+    max-height: 30vh;
 `
 
 

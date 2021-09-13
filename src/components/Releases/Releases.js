@@ -4,20 +4,22 @@ import Description from './Description';
 import Controls from './Controls';
 
 const ReleaseContainer = styled.section`
+    margin-top: -80px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
-    background: linear-gradient(180deg, #000000 0%, rgba(28, 28, 30, 0.6) 12.92%, #1C1C1E 82.71%), url(${props => props.backgroundImg});
+    background: linear-gradient(180deg, #000000 0%, rgba(10, 10, 11, 0.6) 12.5%, rgba(28, 28, 30, 0.6) 84.82%, #1C1C1E 100%), url(${props => props.backgroundImg});
     background-position: center;
     background-size: cover;
     flex-direction: column;
-    height: 85vh;
+    height: 100vh;
     row-gap: 16px;
 `
 const ReleaseBox = styled.div`
+    margin-top: 80px;
     display:flex;
     width: 90%;
-    height: 70%;
+    height: 65%;
     background: blue;
     border-radius: 20px;
     justify-content: center; 
@@ -40,7 +42,7 @@ const Releases = () => {
             <ReleaseBox backgroundImg={'https://img.olhardigital.com.br/wp-content/uploads/2021/07/Maligno.jpg'}>
                 <Description/>
             </ReleaseBox>
-            <Controls/>
+            {/* <Controls/> */}
         </ReleaseContainer>
     )
 }

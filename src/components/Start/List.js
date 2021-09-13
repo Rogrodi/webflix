@@ -15,7 +15,7 @@ const Item = styled.div`
 `
     const Img = styled.div`
         height: 100%;
-        width: 86px;
+        width: 120px;
         background: url(${props => props.backgroundImg});
         background-position: center;
         background-size: cover;

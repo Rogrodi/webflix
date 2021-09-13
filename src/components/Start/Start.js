@@ -5,9 +5,9 @@ import List from "./List";
 const StartBox = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
+    max-width:40%;
     row-gap: 20px;
-    flex-grow: 1;
-    max-width: 45%;
     @media(max-width:1000px){
         max-width: 100%;
     }
@@ -20,15 +20,15 @@ const Title = styled.h1`
 
 const Div = styled.div`
     display: flex;
-    max-height: 60vh;
-    overflow-Y: scroll;
+    max-height: 30vh;
+    overflow:hidden;
     flex-direction: column;
     row-gap: 20px;
     @media(max-width:1000px){
         flex-direction: row;
+        max-width:100%;
         column-gap: 20px;
-        overflow-X: scroll;
-        overflow-Y: hidden;
+        overflow:hidden;
     }
 `
 

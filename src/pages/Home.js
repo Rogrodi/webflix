@@ -9,22 +9,24 @@ import Start from "../components/Start/Start";
 const Div = styled.main`
     display: flex;
     flex-direction: column;
-    row-gap: 36px;
+    row-gap: 48px;
 `
 
 const KeepArea = styled.section`
+    margin-top: -120px;
     display: flex;
     align-items: center; 
     justify-content: center;
-    padding-bottom: 40px;
 `
 const KeepArea2 = styled.div`
     column-gap: 24px;
     row-gap: 72px;
     display: flex;
     width: 90%;
-    flex-wrap: wrap;
     justify-content: space-between;
+    @media(max-width:1000px){
+        flex-wrap: wrap;
+    }
 `
 
 const Home = () => {

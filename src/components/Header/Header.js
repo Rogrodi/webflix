@@ -9,8 +9,7 @@ const Organism = Styled.header`
     align-items: center;
     justify-content: center;
     width: 100%;
-    position: absolute;
-    z-index: 99;
+    background: none:
 `
 
 const Molecule = Styled.div`
@@ -21,6 +20,7 @@ const Molecule = Styled.div`
     width: 90%;
     justify-content: space-between;
     align-items: center;
+    z-index: 99;
 `
 
 const Div = Styled.div`

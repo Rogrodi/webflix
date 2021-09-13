@@ -14,8 +14,8 @@ padding: 16px;
     const Img = styled.div`
         display: flex;
         flex-shrink: 0;
-        width: 250px;
         height: 100%;
+        width: 120px;
         background: linear-gradient(180deg, rgba(138, 135, 135, 0) 12.16%, rgba(58, 58, 60, 0.9) 82.71%), url(${props => props.backgroundImg});
         background-position: center;
         background-size: cover;
@@ -23,7 +23,7 @@ padding: 16px;
     `
 
     const Desc = styled.div`
-        display: flex; 
+        display: flex;
         flex-direction: column;
         row-gap:24px;
         justify-content: space-between;

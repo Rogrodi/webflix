@@ -11,6 +11,7 @@ const Section = styled.section`
 const Div = styled.section`
     display: flex;
     width: 90%;
+    row-gap:8px;
     flex-direction: column;
 `
 
@@ -21,10 +22,9 @@ const Title = styled.h2`
 
 const List = styled.div`
     display: flex;
-    padding:18px;
-    overflow-X: scroll;
+    overflow:hidden;
     flex-direction: row;
-    column-gap: 18px;
+    column-gap: 4px;
    
 `
 
@@ -43,7 +43,7 @@ const ForYou = ({title,API}) => {
                return( 
                     {
                         movieTitle: item.title,
-                        movieImg: `https://image.tmdb.org/t/p/w500/${item.backdrop_path}`,
+                        movieImg: `https://image.tmdb.org/t/p/w500/${item.poster_path}`,
                     }
                 )
             })
